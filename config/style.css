@@ -3,26 +3,27 @@
     padding: 0px;
     border: 0px;
 }
+
 body{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    background-color: rgb(43, 36, 36);
-    color: white;
+    background-color: rgb(56, 54, 54);
+    color: rgb(243, 241, 241);
     overflow-x: hidden;
 }
 
 /*Header*/
 
 header{
-    background-color: rgb(43, 36, 36);
+    background-color: rgb(56, 54, 54);
     height: 70px;
+    padding: 10px;
 }
 
 header h1{
     margin-top: 10px;
     margin-left: 40px;
-    color: white;
 }
 
 #hrLine{
@@ -47,12 +48,13 @@ nav ul{
 }
 
 nav ul a li:hover{
-    color: rgb(196, 188, 188);
+    color: rgb(255, 255, 255);
 }
 
 nav ul a{
     text-decoration: none;
-    color: white;
+    color: rgb(243, 241, 241);
+
 }
 
 nav ul a li{
@@ -60,86 +62,59 @@ nav ul a li{
     margin-right: 50px;
 }
 
-/*Sumário*/
+.carrousel{
+    width: 400px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+}
 
-.sumario{
+.carrousel ul{
+    display: flex;
+    list-style: none;
+    width: 1200px;
+    height: 250px;
+}
+
+.carrousel li{
+    position: relative;
+    animation: slide 10s infinite ease-out;
+}
+
+@keyframes slide {
+   0%{
+       left: 0px;
+   }
+   20%{
+       left: 0px;
+   }
+   30%{
+       left: -475px;
+   }
+   50%{
+    left: -475px;
+}
+   60%{
+       left: -967px;
+   }
+   90%{
+    left: -967px;
+}
+   100%{
+       left: 0px;
+   }
+}
+
+/*Conteudo principal*/
+.content-wrapper{
     margin-top: 10%;
-}
-
-.sumario h2{
-    animation-name: animationSumarioTittle;
-    animation-duration: 2000ms;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-@keyframes animationSumarioTittle {
-    0%{
-        transform: translate(500px, 0);
-        opacity: 0;
-    }
-
-    100%{
-        opacity: 1;
-    }
-    
-}
-
-.textSumario-wrapper{
-    animation-name: animationSumario;
-    animation-duration: 2000ms;
-    margin-left: 31%;
-    max-width: 40%;
-    text-align: left;
-    justify-content: left;
-}
-
-@keyframes animationSumario {
-    0%{
-        transform: translate(-500px, 0);
-        opacity: 0;
-    }
-
-    100%{
-        opacity: 1;
-    }
-    
-}
-
-.textSumario a{
-    justify-content: left;
-    text-decoration: none;
-    color: rgb(26, 141, 207);
-}
-
-.mark{
-    color: red;
-}
-
-/*Models content*/
-
-.conteudoPrincipalResumido{
-    width: 100%;
-    height: 20%;
-    background-color: rgb(163, 158, 158);
-    margin-bottom: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-}
-
-main p{
-    font-size: 22px;
-    justify-content: left;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.conteudoPrincipalResumido h2{
-    text-align: center;
-    margin-bottom: 20px;
-
+    margin-bottom: 10%;
+    max-width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 
