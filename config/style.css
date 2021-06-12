@@ -9,6 +9,7 @@ body{
     font-size: 20px;
     background-color: rgb(43, 36, 36);
     color: white;
+    overflow-x: hidden;
 }
 
 /*Header*/
@@ -66,18 +67,34 @@ nav ul a li{
 }
 
 .sumario h2{
+    animation-name: animationSumarioTittle;
+    animation-duration: 2000ms;
     text-align: center;
     margin-bottom: 10px;
 }
 
-#openBook{
-    position: absolute;
-    left: 26%;
-    animation-name: animationBook;
-    animation-duration: 2000ms;
+@keyframes animationSumarioTittle {
+    0%{
+        transform: translate(500px, 0);
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+    
 }
 
-@keyframes animationBook {
+.textSumario-wrapper{
+    animation-name: animationSumario;
+    animation-duration: 2000ms;
+    margin-left: 31%;
+    max-width: 40%;
+    text-align: left;
+    justify-content: left;
+}
+
+@keyframes animationSumario {
     0%{
         transform: translate(-500px, 0);
         opacity: 0;
@@ -86,29 +103,19 @@ nav ul a li{
     100%{
         opacity: 1;
     }
+    
 }
 
-#avarcar{
-    position: absolute;
-    bottom: -50px;
-    left: 68%;
-    animation-name: animationSeta;
-    animation-duration: 2000ms;
+.textSumario a{
+    justify-content: left;
+    text-decoration: none;
+    color: rgb(26, 141, 207);
 }
 
-@keyframes animationSeta {
-    0%{
-        transform: translate(-500px, 0);
-        opacity: 0;
-    }
-
-    100%{
-        opacity: 1;
-    }
+.mark{
+    color: red;
 }
 
-.textSumario{
-    z-index: 99;
-    margin-top: 50px;
-}
+/*Models content*/
+
 
