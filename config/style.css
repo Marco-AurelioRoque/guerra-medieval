@@ -61,9 +61,24 @@ nav ul a li{
 
 /*Referencias*/
 
-.referencia-wrapper .referencia p{
-    text-align: justify;
-    font-size: 16px;
+.referencia-wrapper{
+    display: none;
+}
+
+.referencia-wrapper .referencia a{
+    margin-left: 38px;
+    font-size: 18px;
+    color: rgb(83, 83, 221);
+}
+
+.referencia-wrapper .referencia a:hover{
+    color: rgb(223, 26, 26);
+}
+
+/*Castelo SR*/
+
+.castle-wrapper{
+    display: none;
 }
 
 /*Conteudo principal*/
