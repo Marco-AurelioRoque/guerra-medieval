@@ -6,6 +6,35 @@ var aba1 = document.querySelector(".aba-open")
 var aba2 = document.querySelector(".aba-open2")
 var aba3 = document.querySelector(".aba-open3")
 
+var DarkMode = document.querySelector(".darkMode")
+var WhiteMode = document.querySelector(".whiteMode")
+var body = document.querySelector("body")
+var line = document.querySelector("#hrLine")
+var left = document.querySelectorAll(".side-left")
+var right = document.querySelectorAll(".side-right")
+
+
+function darkTheme() {
+    DarkMode.style.display = "none"
+    WhiteMode.style.display = "block"
+    
+    body.style.color = "white"
+    body.style.background = "rgb(36, 35, 35)"
+    line.style.background = "white"
+    right.style.background = "gray"
+    left.style.background = "gray"
+}
+
+function whiteTheme() {
+    WhiteMode.style.display = "none"
+    DarkMode.style.display = "block"
+    body.style.color = "black"
+    body.style.background = "rgb(241, 237, 237)"
+    line.style.background = "black"
+    right.style.background = "rgb(172, 169, 169)"
+    left.style.background = "rgb(172, 169, 169)"
+}
+
 //Abas
 function markAba() {
     aba1.style.display = "block"
