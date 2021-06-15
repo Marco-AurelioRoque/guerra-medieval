@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Poller+One&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
     <title>Guerra Medieval</title>
 </head>
 
@@ -16,31 +16,36 @@
 
     <!--Header-->
     <header>
-        <h1>Guerra Medieval</h1>
+        <h1 data-aos="fade-down">Guerra Medieval</h1>
     </header>
 
-    <hr id="hrLine">
+    <hr id="hrLine" data-aos="fade-left">
 
     <section class="menuNav-wrapper">
         <nav>
             <ul>
-                <a href="index.html">
-                    <li>Conteudo Principal</li>
+                <a href="#" onclick="contentPrincipal() ;markAba()">
+                    <li data-aos="fade-right">Conteudo Principal <div class="aba-open"></div>
+                    </li>
                 </a>
-                <a href="#" onclick="castle()">
-                    <li>Castelo - SR</li>
+                <a href="#" onclick="castle(); markAba2()">
+                    <li data-aos="fade-right">Castelo - SR <div class="aba-open2"></div>
+                    </li>
                 </a>
-                <a href="#" onclick="refer()">
-                    <li>Referências</li>
+                <a href="#" onclick="refer(); markAba3()">
+                    <li data-aos="fade-right">Referências <div class="aba-open3"></div>
+                    </li>
                 </a>
             </ul>
         </nav>
     </section>
 
+
+
     <!--Referencias-->
 
     <section class="referencia-wrapper">
-        <h1 style="text-align: center; margin-bottom: 50px;">Referências</h1>
+        <h1 style="text-align: center; margin-bottom: 50px; margin-top: 10%; font-size: 40px;">Referências</h1>
 
         <div class="referencia">
             <a
@@ -106,82 +111,98 @@
 
     <!--Castelo SR-->
     <section class="castle-wrapper">
-        <h1>Perguntas e Respostas</h1>
+        <h1 style="text-align: center; margin-top: 10%; font-size: 40px;">Perguntas e Respostas</h1>
         <div>
 
         </div>
     </section>
 
     <!--Conteudo Principal-->
-
+    <!--Topico 1-->
     <main>
-        <div class="content-wrapper">
-            <p class="content-topico-1">
-
-            <h2>Causas e características da guerra</h2>
-
-            <div class="side-left">Durante a Idade Média (século V ao XV), a Europa foi palco de inúmeras guerras
-                sangrentas que levaram a morte para milhares de pessoas. </div>
-            <br>
-            <div class="side-right">Estas guerras aconteciam por diversos motivos: disputas territoriais, saques,
-                questões políticas, rivalidades familiares e aumento de poder.
-                <div class="side-left-img">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Battle_of_Agincourt%2C_St._Alban%27s_Chronicle_by_Thomas_Walsingham.jpg"
-                        alt="Batalha de Azincourt na Guerra dos Cem Anos: conflito militar entre os reinos da Inglaterra e França."
-                        width="380px" style="margin-top: 20px;">
-                </div>
+        <div class="content-wrapper-1">
+            <h2 data-aos="zoom-in">Causas característica</h2>
+            <div class="side-right" data-aos="fade-left">
+                <p>
+                    Durante a Idade Média (século V ao XV), a Europa foi palco de inúmeras guerras
+                    sangrentas que levaram a morte para milhares de pessoas.
+                </p>
             </div>
-            <br>
-            <div class="side-left">As guerras eram tão importantes na sociedade medieval que a nobreza militarizada,
-                principalmente a cavalaria, tinha uma posição de destaque nos feudos e reinos. Os guerreiros possuíam
-                grande importância e prestígio social e econômico. Preparavam-se desde a infância para serem guerreiros
-                eficientes, leais e corajosos. </div>
-            <br>
-            <div class="side-right"
-                style="position: absolute; margin-left: 80px; bottom: -85.2%; left: 49.5%; max-width: 28%;">Estas
-                guerras
-                aconteciam entre feudos (unidade territorial típica da Idade Média), reinos e até mesmo religiões. Neste
-                último caso, podemos citar as Cruzadas, que foram batalhas entre cristãos e muçulmanos. Também ocorreram
-                muitas guerras entre reinos.
-            </div>
-            <br>
-            <div class="side-left">As relações de vassalagem e suserania mobilizavam grandes contingentes de cavaleiros
-                e guerreiros para as guerras, as guerras envolviam a utilização de vários armamentos. Entre os pessoais,
-                podemos citar espada, elmo, armadura e escudo (principais armamentos de um guerreiro). O cavalo era o
-                meio de transporte usado para o deslocamento durante as batalhas.
-                <div class="side-right-img">
-                    <img src="https://www.suapesquisa.com/uploads/site/guerra_medieval_castelo.jpg"
-                        alt="Pintura mostrando o cerco de um castelo durante uma guerra na Idade Média" width="380px"
-                        style="margin-top: 20px;">
-                </div>
-            </div>
-            <br>
-            <div class="side-right">Além dos instrumentos pessoais, podemos citar a catapulta (mecanismo usado para
-                arremessar pedras ou objetos incandescentes). Esta arma era muito usada na invasão dos castelos. </div>
-            </p>
 
+            <div class="side-left" data-aos="fade-right">
+                <p>
+                    Estas guerras aconteciam por diversos motivos: disputas territoriais, saques,
+                    questões políticas, rivalidades familiares e aumento de poder.
+                </p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Battle_of_Agincourt%2C_St._Alban%27s_Chronicle_by_Thomas_Walsingham.jpg"
+                    alt="Batalha de Azincourt na Guerra dos Cem Anos: conflito militar entre os reinos da Inglaterra e França."
+                    width="432px" style="margin-top: 20px;">
+            </div>
+
+            <div class="side-right" data-aos="fade-left">
+                <p>
+                    Estas
+                    guerras
+                    aconteciam entre feudos (unidade territorial típica da Idade Média), reinos e até mesmo religiões.
+                    Neste
+                    último caso, podemos citar as Cruzadas, que foram batalhas entre cristãos e muçulmanos. Também
+                    ocorreram
+                    muitas guerras entre reinos.
+                </p>
+            </div>
+
+            <div class="side-right" data-aos="fade-left">
+                <p>
+                    As relações de vassalagem e suserania mobilizavam grandes contingentes de cavaleiros
+                    e guerreiros para as guerras, as guerras envolviam a utilização de vários armamentos. Entre os
+                    pessoais,
+                    podemos citar espada, elmo, armadura e escudo (principais armamentos de um guerreiro). O cavalo era
+                    o
+                    meio de transporte usado para o deslocamento durante as batalhas.
+                </p>
+                <img src="https://www.suapesquisa.com/uploads/site/guerra_medieval_castelo.jpg"
+                    alt="Pintura mostrando o cerco de um castelo durante uma guerra na Idade Média" width="432px"
+                    style="margin-top: 20px;">
+            </div>
+
+            <div class="side-left" data-aos="fade-right">
+                <p>
+                    Além dos instrumentos pessoais, podemos citar a catapulta (mecanismo usado para
+                    arremessar pedras ou objetos incandescentes). Esta arma era muito usada na invasão dos castelos.
+                </p>
+            </div>
         </div>
+        </div>
+
+        <!--Topico 2-->
 
         <div class="content-wrapper-2">
-            <p class="content-topico-2">
-            <h2>As guerras eram lideradas pelo rei?</h2>
-            <div class="side-center">No início do período medieval, os reis germânicos tentaram manter a unidade
-                territorial do Império Romano. Os reis germânicos eram chefes políticos e militares, pois atuavam à
-                frente dos seus soldados em momentos de guerra. </div>
-            </p>
+            <h2 data-aos="zoom-in">As guerras eram lideradas pelo rei?</h2>
+            <div class="side-center" data-aos="zoom-in">
+                <p >
+                    No início do período medieval, os reis germânicos tentaram manter a unidade
+                    territorial do Império Romano. Os reis germânicos eram chefes políticos e militares, pois atuavam à
+                    frente dos seus soldados em momentos de guerra.
+                </p>
+            </div>
+            <img src="https://th.bing.com/th/id/OIP.fUo13n8lfa4HLoQEpzR9twHaEX?pid=ImgDet&rs=1"
+                alt="Rei indo para a guerra" width="420px" class="img-random side-left" data-aos="fade-left">
+
+            <img src="https://th.bing.com/th/id/OIP.9faUrvuQNlScj0lujYRKwwHaFe?pid=ImgDet&rs=1"
+                alt="Rei indo para a guerra" width="420px" class="img-random side-right" style="margin-top: 30px;" data-aos="fade-right">
         </div>
 
-        <div class="content-wrapper">
-            <h2>Armas usadas na guerra</h2>
-            <div class="side-right">
-                <!--Espada-->
-
+        <!--Topico 3-->
+        <div class="content-wrapper-3">
+            <h2 data-aos="zoom-in">Armas usadas na guerra</h2>
+            <div class="side-right" data-aos="fade-left">
                 <h3>Espada</h3>
+
                 <p>Nenhuma arma está mais associada à Idade Média do que a espada. Foi usado em todo o mundo medieval e,
                     como explica Sue Brunning , era mais do que apenas uma arma:
                     <br>
-                    <img src="https://th.bing.com/th/id/R380cd13e055968be394155bef4e6cb97?rik=lZ02JBTg%2bu5y2g&pid=ImgRaw"
-                        alt="Espada" width="380px">
+                    <img src="https://img-aws.ehowcdn.com/750x400p/photos.demandstudios.com/getty/article/178/226/87490538.jpg"
+                        alt="Espada" width="430px">
                     <br>
                     Toda cultura que fez e usou espadas os viu como objetos extraordinários. Eles aparecem
                     predominantemente na história, cosmologia e mitologia de comunidades em todo o mundo, da África ao
@@ -191,8 +212,9 @@
                     medo.
                 </p>
                 <br>
-                <!--Arco-->
-                <br>
+            </div>
+
+            <div class="side-left" data-aos="fade-right">
                 <h3>Arco</h3>
 
                 <p>Combine uma pauta de madeira flexível com barbante forte e você terá uma das armas mais conhecidas da
@@ -205,21 +227,19 @@
                     batalhas importantes durante a Guerra dos Cem Anos. Como Jim Bradbury escreve : "Não havia situação
                     militar em que o arco não pudesse ser útil". </p>
 
-                <img src="https://th.bing.com/th/id/OIP.kZDZfXem3qSlTNJlA3JeHgHaBu?pid=ImgDet&rs=1" alt="Arco"
-                    width="380px">
-                <br>
-                <!--Bestas-->
-                <br>
-
+                <img src="https://th.bing.com/th/id/OIP.pRNxVqcps51TJwqyI9e9GAHaE7?pid=ImgDet&rs=1" alt="Arco"
+                    width="430px">
+            </div>
+            <div class="side-right" data-aos="fade-left">
                 <h3>Bestas</h3>
-
+                
                 <p>Embora essa arma existisse desde os tempos antigos, estranhamente não foi mencionada muito no início
                     da Europa medieval. Então, no século XII, a besta retornou, servindo como uma maneira de soldados
                     regulares lutarem contra os melhores cavaleiros blindados e equipados. Helen Nicholson descreve a
                     besta:
                     <br>
                     <img src="https://th.bing.com/th/id/OIP.aGE7Khtuq2YIzwKltFL9TgHaDW?pid=ImgDet&rs=1" alt="Besta"
-                        width="380px">
+                        width="430px">
                     <br>
                     Não era uma arma rápida de usar, porque estender o arco (puxando a corda, prendendo-o com o
                     'gatilho' e colocando a flecha ou o ferrolho na posição, pronto para disparar) demorava muito mais
@@ -233,10 +253,9 @@
                     posterior e, no século XV, as cidades estavam realizando torneios de tiro em grande escala. A besta
                     continuaria sendo uma arma muito usada, mesmo durante a próxima era das armas.
                 </p>
-                <br>
-                <!--Alabardas-->
-                <br>
+            </div>
 
+            <div class="side-left" data-aos="fade-right">
                 <h3>Alabardas</h3>
 
                 <p>Eles eram chamados de alabardas, lanças, glaivas e vários outros nomes - todas eram variações de um
@@ -245,13 +264,11 @@
                     pois era possível demonstrar que os exércitos que usavam essas armas podiam derrotar a cavalaria em
                     batalha. A chave estava em criar formações e coordená-las no campo de batalha - como um grande grupo
                     elas poderiam ser impenetráveis para atacar e mortíferas na ofensiva. </p>
-
                 <img src="https://th.bing.com/th/id/R972f0dde2976fe5f87042395f39732bc?rik=DpERH8NcKm%2f%2bmA&riu=http%3a%2f%2f4.bp.blogspot.com%2f_ZJdr7sIBuo0%2fSqjMdyy-_6I%2fAAAAAAAAAAM%2f6O44kA8K5Mg%2fs400%2fALABARDAS%2bLEGIONARIAS.JPG&ehk=dES2uwlQpijlgATw%2fIrLcmnZfSZU54%2fOu%2f0sYYYrAQI%3d&risl=&pid=ImgRaw"
-                    alt="Alabardas" width="380px">
-                <br>
-                <!--Punhal-->
-                <br>
+                    alt="Alabardas" width="430px">
+            </div>
 
+            <div class="side-right" data-aos="fade-left">
                 <h3>Punhal</h3>
 
                 <p>Essencialmente, uma versão menor da espada, não se deve desconsiderá-la como uma importante arma de
@@ -264,15 +281,14 @@
                     associado ao fim das batalhas, quando os soldados vitoriosos tiveram que decidir o que fazer com os
                     oponentes derrotados - oferecer-lhes "misericórdia" e levá-los como prisioneiros, ou dar-lhes
                     "misericórdia" matando. </p>
-
-                <img src="https://th.bing.com/th/id/OIP.08tEbvOMyY94SYIJdOMK8gAAAA?pid=ImgDet&rs=1" alt="Punhal"
-                    width="380px">
+                <img src="https://i.pinimg.com/474x/af/aa/b4/afaab4f36cad36d7adf44014980e9f11.jpg" alt="Punhal"
+                    width="430px">
             </div>
 
-            <div class="side-left">
-                <!--Arma de fogo-->
 
+            <div class="side-left" data-aos="fade-right">
                 <h3>Arma de fogo</h3>
+
                 <p>A arma que transformaria o mundo medieval no início da era moderna eram as armas de fogo e os
                     arcabuzes empunhados por indivíduos, e as peças de artilharia maiores, como canhões, que podiam
                     atingir fortificações. A invenção da pólvora na China no início do século IX desencadearia uma série
@@ -288,15 +304,13 @@
                     suprimentos. Os estados que foram capazes de fazê-lo com mais eficiência surgiriam nos séculos XV e
                     XVI como as principais potências da Europa e da Ásia.
                 </p>
+                <img src="https://th.bing.com/th/id/R13e00868c9e2d85f619c9fcf28a6bdcd?rik=UDcpEaHPzC2VTg&pid=ImgRaw"
+                    alt="Arma de fogo" width="430px">
+            </div>
 
-                <img src="https://st3.depositphotos.com/1007298/17188/i/450/depositphotos_171884616-stock-photo-9mm-pistol-bullet.jpg"
-                    alt="Arma de fogo" width="380px">
-                <br>
-                <!--Lança-->
-                <br>
-
+            <div class="side-right" data-aos="fade-left">
                 <h3>Lança</h3>
-
+                
                 <p>Kelly DeVries e Kay Smith observam que “desde os primeiros tempos, a lança, juntamente com a espada,
                     era a arma ofensiva mais importante e amplamente usada tanto para a infantaria quanto para a
                     cavalaria.” Essencialmente, um longo bastão que terminava com uma lâmina, a lança podia ser segurado
@@ -305,18 +319,13 @@
                     cavaleiros colocavam a lança debaixo dos braços e usavam a velocidade de seus cavalos para dar um
                     golpe poderoso.
                     <br>
-                    <img src="https://th.bing.com/th/id/OIP.aJDkUGA6oN2nUUFQrK2AWQHaGM?w=199&h=180&c=7&o=5&pid=1.7"
-                        alt="Lança" width="380px">
-                    <br>
+                    <img src="https://th.bing.com/th/id/OIP.aJDkUGA6oN2nUUFQrK2AWQHaGM?w=199&h=180&c=7&o=5&pid=1.7"alt="Lança" width="430px">
                     A lança do cavaleiro evoluiu para a lança - a arma que comumente associamos a justas e torneios,
                     outro símbolo duradouro da Idade Média.
-                </p>
-                <br>
-                <!--Trebuchets-->
-                <br>
+            </div>
 
+            <div class="side-left" data-aos="fade-right">
                 <h3>Trebuchets</h3>
-
                 <p>Surgindo no século XII, o trabuco foi o primeiro desenvolvimento importante em máquinas de cerco
                     desde os tempos antigos. Marcou uma grande melhoria em relação a armas como a catapulta, tornando-se
                     uma maneira mais formidável de atacar castelos e outras fortificações.
@@ -331,24 +340,22 @@
                     e ejetar seu conteúdo, a funda girando no último minuto para dar um impulso adicional.
                     <br>
                     <img src="https://th.bing.com/th/id/R2739f1af51a4cec24f3d0a1cc5e3bc3b?rik=qKnkChVz8uK2ag&riu=http%3a%2f%2fdarkwolfyclass.weebly.com%2fuploads%2f8%2f8%2f2%2f1%2f88213350%2fcatapult.jpg%3f245&ehk=rvbQJc3QkjWTg6Qy2XHRsFhh1s3iFsyhAttYnTkzXB4%3d&risl=&pid=ImgRaw"
-                        alt="Trebuchets" width="380px">
+                        alt="Trebuchets" width="430px">
                     <br>
                     Enquanto hoje o trabuco é mais visto como um desafio de engenharia para estudantes universitários ou
                     de uma maneira divertida de jogar abóboras, na Idade Média representava uma nova tecnologia que
                     obrigava os comandantes militares a adaptar suas defesas, um processo que seria aprimorado ainda
                     mais pelas armas de pólvora.
-                    <br>
-                    <!--Machados-->
-                    <br>
+            </div>
 
+            <div class="side-right" data-aos="fade-left">
                 <h3>Machados</h3>
-
                 <p>Esta arma está mais associada à Idade Média, embora ainda fosse usada nos séculos posteriores.
                     Enquanto povos como os francos usavam machados menores como arma de arremesso, era a versão maior,
                     usada na Escandinávia, que conhecíamos tão bem. Jim Bradbury explica:
                     <br>
-                    <img src="https://th.bing.com/th/id/OIP.G1BToni2T2ur9J1ekfqIyAHaJB?pid=ImgDet&rs=1" alt="Machados"
-                        width="380px">
+                    <img src="https://th.bing.com/th/id/R23fff71b77ec84db76d79d78acd84ce6?rik=nsoxK3964TfiqQ&riu=http%3a%2f%2fwww.anticasoffitta.com%2fimages%2fproduct%2fAD-39.00614.jpg&ehk=%2bUNnCEKJV%2fAy7yk5fjpkkO%2bBLO9T5xV5abuBQOeMbP0%3d&risl=&pid=ImgRaw" alt="Machados"
+                        width="430px">
                     <br>
                     O machado de batalha era popular entre os vikings e frequentemente chamado de machado nórdico ou
                     <br>
@@ -359,11 +366,17 @@
                     <br>
                     no encaixe, ampliando-se para uma borda curva com cerca de um pé de comprimento.
                 </p>
-                </p>
             </div>
         </div>
     </main>
 
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 

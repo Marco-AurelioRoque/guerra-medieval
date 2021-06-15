@@ -6,7 +6,6 @@
 
 body{
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     background-color: rgb(241, 237, 237);
     color: rgb(0, 0, 0);
@@ -23,7 +22,7 @@ header{
 header h1{
     margin-top: 10px;
     margin-left: 40px;
-    font-family: 'Poller One', cursive;
+    font-family: 'Hammersmith One', sans-serif;
 }
 
 #hrLine{
@@ -38,7 +37,6 @@ header h1{
 
 .menuNav-wrapper{
     margin-left: 35px;
-    margin-top: 15px;
 }
 
 nav ul{
@@ -48,6 +46,7 @@ nav ul{
 }
 
 nav ul a li:hover{
+    background-color: rgb(181, 203, 235);
     color: rgb(255, 255, 255);
 }
 
@@ -56,8 +55,38 @@ nav ul a{
 }
 
 nav ul a li{
-    font-size: 17px;
-    margin-right: 50px;
+    font-size: 19px;
+    margin-right: 5px;
+    text-align: center;
+    background-color: white;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.aba-open{
+    display: block;
+    background-color: rgb(150, 185, 238);
+    height: 3px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.aba-open2{
+    display: none;
+    background-color: rgb(150, 185, 238);
+    height: 3px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.aba-open3{
+    display: none;
+    background-color: rgb(150, 185, 238);
+    height: 3px;
+    margin-top: 5px;
+    border-radius: 5px;
 }
 
 /*Referencias*/
@@ -83,58 +112,30 @@ nav ul a li{
 }
 
 /*Conteudo principal*/
-.content-wrapper{
+/*Topico 1*/
+.content-wrapper-1{
     margin-top: 10%;
-    margin-bottom: 80%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 70%;
+    max-width: 80%;
 }
 
-.content-wrapper-2{
-    margin-top: 20%;
-    margin-bottom: 20%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 70%;
-    text-align: center;
-    box-shadow: 1px 5px 25px rgb(172, 169, 169);
-    padding: 10px;
-    border-radius: 10px;
-}
 
 .side-right{
     box-shadow: 1px 5px 25px rgb(172, 169, 169);
     padding: 10px;
     border-radius: 10px;
+    float: right;
+    max-width: 40%;
+    margin-bottom: 35px;
+    direction: ltr;
+    text-align: justify;
 }
 
 .side-left{
     box-shadow: 1px 5px 25px rgb(172, 169, 169);
     padding: 10px;
     border-radius: 10px;
-}
-
-p{
-    font-family: 'Noto Sans JP', sans-serif;
-}
-
-.content-wrapper h2{
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.content-wrapper .side-left h3{
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.content-wrapper .side-right h3{
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.content-wrapper .side-left{
     float: left;
     max-width: 40%;
     margin-top: 35px;
@@ -142,13 +143,77 @@ p{
     text-align: justify;
 }
 
-.content-wrapper .side-right{
+.content-wrapper-1 h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*Topico 2*/
+
+.content-wrapper-2{
+    margin-top: 90%;
+    margin-bottom: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
+
+.side-center{
+    box-shadow: 1px 5px 25px rgb(172, 169, 169);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.content-wrapper-2 h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*Topico 3*/
+
+.content-wrapper-3{
+    margin-top: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
+
+
+.side-right{
+    box-shadow: 1px 5px 25px rgb(172, 169, 169);
+    padding: 10px;
+    border-radius: 10px;
     float: right;
     max-width: 40%;
     margin-bottom: 35px;
     direction: ltr;
     text-align: justify;
 }
+
+.side-left{
+    box-shadow: 1px 5px 25px rgb(172, 169, 169);
+    padding: 10px;
+    border-radius: 10px;
+    float: left;
+    max-width: 40%;
+    margin-top: 35px;
+    direction: ltr;
+    text-align: justify;
+}
+
+.content-wrapper-3 h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content-wrapper-3 h3{
+    text-align: center;
+    margin: 5px;
+}
+
 
 
 
