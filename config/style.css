@@ -461,41 +461,74 @@ nav ul a li{
 /*Topico 9*/
 
 .content-wrapper-9{
-    margin-top: 400px;
-    margin-left: 42%;
+    margin-top: 500px;
+    margin-bottom: 30%;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 80%;
-    margin-bottom: 10%;
+}
+
+.side1{
+    box-shadow: 1px 5px 25px rgb(172, 169, 169);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.content-wrapper-9 .sides .side1 input{
+    display: none;
+}
+
+.content-wrapper-9 .sides .side1 input + label::before{
+    
+}
+
+.side2{
+    box-shadow: 1px 5px 25px rgb(172, 169, 169);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+
+.side3{
+    box-shadow: 1px 5px 25px rgb(172, 169, 169);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.side4{
+    box-shadow: 1px 5px 25px rgb(172, 169, 169);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.side5{
+    box-shadow: 1px 5px 25px rgb(172, 169, 169);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.side6{
+    box-shadow: 1px 5px 25px rgb(172, 169, 169);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 500px;
 }
 
 .content-wrapper-9 h2{
     font-size: 40px;
-    position: relative;
-    right: 130px;
+    text-align: center;
     margin-bottom: 30px;
 }
 
-.content-wrapper-9 div{
+.content-wrapper-9 .sides{
     display: flex;
-    flex-direction: column;
-    box-shadow: 1px 5px 25px rgb(172, 169, 169);
-    padding: 10px;
-    border-radius: 10px;
-    width: 200px;
 }
 
-.content-wrapper-9 div a{
-    text-decoration: none;
-}
-.content-wrapper-9 div a:hover{
-    color: red;
-}
-
-.content-wrapper-9 div ul{
-    width: 200px;
-    height: 70px;
-    text-align: center;
-}
-
-.content-wrapper-9 div ul li{
-    list-style-type: none;
+.content-wrapper-9 .sides div{
+    margin-left: 10px;
 }

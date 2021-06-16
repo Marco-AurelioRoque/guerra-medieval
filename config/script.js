@@ -13,7 +13,6 @@ var line = document.querySelector("#hrLine")
 var left = document.querySelectorAll(".side-left")
 var right = document.querySelectorAll(".side-right")
 
-
 function darkTheme() {
     DarkMode.style.display = "none"
     WhiteMode.style.display = "block"
