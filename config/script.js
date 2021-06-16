@@ -13,6 +13,17 @@ var line = document.querySelector("#hrLine")
 var left = document.querySelectorAll(".side-left")
 var right = document.querySelectorAll(".side-right")
 
+var video = document.querySelector("iframe")
+
+function  reiArthur() {
+    video.style.display = "block"
+}
+
+function fecharModal() {
+    video.style.display = "none"
+}
+
+//Temas
 function darkTheme() {
     DarkMode.style.display = "none"
     WhiteMode.style.display = "block"
