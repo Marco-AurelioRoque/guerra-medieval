@@ -7,16 +7,23 @@
 body{
     box-sizing: border-box;
     font-size: 20px;
-    background-color: rgb(241, 237, 237);
-    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     overflow-x: hidden;
 }
 
 /*Header*/
 
 header{
+    text-align: center;
+    color: white;
     height: 70px;
     padding: 10px;
+    background-image: url(https://th.bing.com/th/id/OIP.eFQi4YCR_ck6fcG7UA2iowHaEK?w=281&h=180&c=7&o=5&pid=1.7);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 100%;
+    background-position-y: 100%;
 }
 
 header h1{
@@ -34,6 +41,7 @@ header h1{
     position: fixed;
     right: 0;
     top: 0;
+    display: none;
 }
 
 .darkMode p{
@@ -50,7 +58,6 @@ header h1{
 
 /*WhiteMode*/
 .whiteMode{
-    display: none;
     width: 50px;
     height: 50px;
     background-color: rgb(255, 255, 255);
@@ -72,10 +79,15 @@ header h1{
     cursor: pointer;
 }
 
+.whiteMode p:hover{
+    color: red;
+    cursor: pointer;
+}
+
 /*Outro*/
 
 #hrLine{
-    width: 95%;
+    width: 100%;
     background-color: rgb(0, 0, 0);
     height: 2px;
     margin-left: auto;
@@ -85,10 +97,13 @@ header h1{
 /*Menu*/
 
 .menuNav-wrapper{
-    margin-left: 35px;
+    max-width: 80%;
 }
 
 nav ul{
+    margin-left: 50%;
+    transform: translate(-35%);
+    padding: 10px;
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -118,7 +133,7 @@ nav ul a li{
     display: block;
     background-color: rgb(150, 185, 238);
     height: 4px;
-    margin-top: 5px;
+    margin-top: 4px;
     border-radius: 5px;
 }
 
@@ -126,7 +141,7 @@ nav ul a li{
     display: none;
     background-color: rgb(150, 185, 238);
     height: 4px;
-    margin-top: 5px;
+    margin-top: 4px;
     border-radius: 5px;
 }
 
@@ -134,7 +149,7 @@ nav ul a li{
     display: none;
     background-color: rgb(150, 185, 238);
     height: 4px;
-    margin-top: 5px;
+    margin-top: 4px;
     border-radius: 5px;
 }
 
@@ -167,6 +182,14 @@ nav ul a li{
 
 .castle-wrapper{
     display: none;
+}
+
+/*IMG*/
+
+img{
+    max-width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 /*Conteudo principal*/
@@ -236,7 +259,7 @@ nav ul a li{
 /*Topico 3*/
 
 .content-wrapper-3{
-    margin-top: 50%;
+    margin-top: 40%;
     margin-left: auto;
     margin-right: auto;
     max-width: 80%;
@@ -256,7 +279,7 @@ nav ul a li{
 /*Topico 4*/
 
 .content-wrapper-4{
-    margin-top: 4400px;
+    margin-top: 4200px;
     margin-left: auto;
     margin-right: auto;
     max-width: 80%;
@@ -283,7 +306,7 @@ nav ul a li{
 /*Topico 5*/
 
 .content-wrapper-5{
-    margin-top: 1500px;
+    margin-top: 1300px;
     margin-left: auto;
     margin-right: auto;
     max-width: 80%;
@@ -333,7 +356,7 @@ nav ul a li{
 /*Topico 8*/
 
 .content-wrapper-8{
-    margin-top: 400px;
+    margin-top: 200px;
     margin-left: auto;
     margin-right: auto;
     max-width: 80%;
@@ -348,7 +371,7 @@ nav ul a li{
 /*Topico 9*/
 
 .content-wrapper-9{
-    margin-top: 500px;
+    margin-top: 600px;
     margin-bottom: 30%;
     margin-left: auto;
     margin-right: auto;
@@ -393,7 +416,7 @@ nav ul a li{
 /*Topico 10*/
 
 .content-wrapper-10{
-    margin-top: 1400px;
+    margin-top: 1300px;
     margin-bottom: 30%;
     margin-left: auto;
     margin-right: auto;
@@ -410,10 +433,39 @@ nav ul a li{
     text-align: center;
 }
 
+/*Topico 11"*/
+
+.content-wrapper-11{
+    margin-top: 2900px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
+
+.content-wrapper-11 .side-center{
+    box-shadow: 1px 5px 25px rgb(172, 169, 169);
+    max-width: 50%;
+    margin-left: 24%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+
+.content-wrapper-11 h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content-wrapper-11 h3{
+    text-align: center;
+}
+
 /*Footer*/
 
 footer{
-    margin-top: 220%;
+    margin-top: 20%;
     background-color: rgb(14, 15, 15);
     color: white;
     padding: 10px;

@@ -12,22 +12,24 @@ var body = document.querySelector("body")
 var line = document.querySelector("#hrLine")
 var left = document.querySelectorAll(".side-left")
 var right = document.querySelectorAll(".side-right")
+var h2 = document.querySelector("h2")
 
 //Temas
 function darkTheme() {
     DarkMode.style.display = "none"
     WhiteMode.style.display = "block"
     
+    h2.style.color = "white"
     body.style.color = "white"
     body.style.background = "rgb(36, 35, 35)"
     line.style.background = "white"
-    right.style.background = "gray"
-    left.style.background = "gray"
 }
 
 function whiteTheme() {
     WhiteMode.style.display = "none"
     DarkMode.style.display = "block"
+
+    h2.style.color = "black"
     body.style.color = "black"
     body.style.background = "rgb(241, 237, 237)"
     line.style.background = "black"
