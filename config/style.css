@@ -7,9 +7,9 @@
 body{
     box-sizing: border-box;
     font-size: 20px;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    background-color: rgb(41, 41, 41, 0.90);
     overflow-x: hidden;
+    color: #ffffff;
 }
 
 /*Header*/
@@ -19,12 +19,9 @@ header{
     color: white;
     height: 70px;
     padding: 10px;
-    background-image: url(https://th.bing.com/th/id/OIP.eFQi4YCR_ck6fcG7UA2iowHaEK?w=281&h=180&c=7&o=5&pid=1.7);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: 100%;
-    background-position-y: 100%;
 }
+
+
 
 header h1{
     margin-top: 10px;
@@ -122,7 +119,7 @@ nav ul a li{
     font-size: 19px;
     margin-right: 5px;
     text-align: center;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     width: 200px;
     height: 30px;
     border-radius: 5px;
@@ -194,14 +191,14 @@ img{
 
 /*Conteudo principal*/
 .side-center{
-    box-shadow: 1px 5px 25px rgb(172, 169, 169);
+    box-shadow: 5px 5px 10px rgb(173, 172, 172);
     padding: 10px;
     border-radius: 10px;
     border: 1px solid black;
 }
 
 .side-right{
-    box-shadow: 1px 5px 25px rgb(172, 169, 169);
+    box-shadow: 5px 5px 10px rgb(173, 172, 172);
     padding: 10px;
     border-radius: 10px;
     float: right;
@@ -213,7 +210,7 @@ img{
 }
 
 .side-left{
-    box-shadow: 1px 5px 25px rgb(172, 169, 169);
+    box-shadow: 5px 5px 10px rgb(173, 172, 172);
     padding: 10px;
     border-radius: 10px;
     float: left;

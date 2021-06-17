@@ -10,8 +10,6 @@ var DarkMode = document.querySelector(".darkMode")
 var WhiteMode = document.querySelector(".whiteMode")
 var body = document.querySelector("body")
 var line = document.querySelector("#hrLine")
-var left = document.querySelectorAll(".side-left")
-var right = document.querySelectorAll(".side-right")
 var h2 = document.querySelector("h2")
 
 //Temas
@@ -33,8 +31,6 @@ function whiteTheme() {
     body.style.color = "black"
     body.style.background = "rgb(241, 237, 237)"
     line.style.background = "black"
-    right.style.background = "rgb(172, 169, 169)"
-    left.style.background = "rgb(172, 169, 169)"
 }
 
 //Abas
