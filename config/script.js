@@ -11,7 +11,7 @@ var WhiteMode = document.querySelector(".whiteMode")
 var body = document.querySelector("body")
 var line = document.querySelector("#hrLine")
 var h2 = document.querySelector("h2")
-
+var header = document.querySelectorAll("header")
 //Temas
 function darkTheme() {
     DarkMode.style.display = "none"
