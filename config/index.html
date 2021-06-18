@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    link
+    <link rel="stylesheet" href="responsivo.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
@@ -29,18 +29,19 @@
         <div>
             <a href="#header">
                 <button id="topo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/VisualEditor_-_Icon_-_Collapse.svg/480px-VisualEditor_-_Icon_-_Collapse.svg.png" alt="Cima" width="40px" style="position: fixed; right: 0px; bottom: 50px; background-color: rgba(15, 240, 240, 0.849); cursor: pointer;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/VisualEditor_-_Icon_-_Collapse.svg/480px-VisualEditor_-_Icon_-_Collapse.svg.png" alt="Cima" width="40px" style="position: fixed; right: 0px; bottom: 50px; background-color: rgba(15, 240, 240, 0.849); cursor: pointer; z-index: 2000; ">
                 </button>
             </a>
 
             <a href="#footer">
                 <button id="baixo">
-                    <img src="https://res.cloudinary.com/dt9b7pad3/image/upload/v1502810110/angle-down-dark_dkyopo.png" alt="Baixo" width="40px" style="position: fixed; right: 0px; bottom: 0px; background-color: rgba(15, 240, 240, 0.849); cursor: pointer; ">
+                    <img src="https://res.cloudinary.com/dt9b7pad3/image/upload/v1502810110/angle-down-dark_dkyopo.png" alt="Baixo" width="40px" style="position: fixed; right: 0px; bottom: 0px; background-color: rgba(15, 240, 240, 0.849); cursor: pointer; z-index: 2000;">
                 </button>
             </a>
         </div>
     </section>
 
+    <!--Modes-->
 
     <div class="modes">
         <section class="darkMode" onclick="darkTheme()" data-aos="fade-left">
@@ -56,6 +57,8 @@
 
         </section>
     </div>
+
+    <!--Menu nav-->
 
     <section class="menuNav-wrapper">
         <nav>
@@ -75,8 +78,6 @@
             </ul>
         </nav>
     </section>
-
-
 
     <!--Referencias-->
 
@@ -117,17 +118,11 @@
             <br>
             <br>
             <a
-                href="https://pt.wikipedia.org/wiki/Ex%C3%A9rcito_romano#:~:text=A%20barbariza%C3%A7%C3%A3o%20das%20posi%C3%A7%C3%B5es%20mais,ao%20trono%20imperial%20Maximino%20Tr%C3%A1cio.">Onde
-                os líderes das batalhas ficavam, marítimas e terrestres (no próprio navio, porém afastado? Em
-                tabernas?)</a>
-            <br>
-            <br>
-            <a
                 href="https://www.megacurioso.com.br/historia-e-geografia/41885-6-dos-cavaleiros-mais-celebres-da-era-medieval.htm">Quais
                 foram os nomes mais temidos da época por conta desses combates tanto em terra quanto na água? </a>
             <br>
             <br>
-            <a href=""></a>
+            <a href="https://brasilescola.uol.com.br/guerras/idade-media.htm">Prinicipais guerras da idade média</a>
             <br>
             <br>
             <a
@@ -148,7 +143,7 @@
     <!--Castelo SR-->
     <section class="castle-wrapper">
         <h1 style="text-align: center; margin-top: 10%; font-size: 40px;">Perguntas e Respostas</h1>
-        <div>
+        <div class="faq-castle">
 
         </div>
     </section>
@@ -220,10 +215,10 @@
                     frente dos seus soldados em momentos de guerra.
                 </p>
             </div>
-            <img src="img/12.jpg" alt="Rei indo para a guerra" width="420px" class="img-random side-left"
+            <img src="img/12.jpg" alt="Rei indo para a guerra" width="420px" class="side-left"
                 data-aos="fade-left">
 
-            <img src="img/13.jpg" alt="Rei indo para a guerra" width="420px" class="img-random side-right"
+            <img src="img/13.jpg" alt="Rei indo para a guerra" width="420px" class="side-right"
                 style="margin-top: 30px;" data-aos="fade-right">
         </div>
 

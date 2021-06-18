@@ -11,8 +11,10 @@ var WhiteMode = document.querySelector(".whiteMode")
 var body = document.querySelector("body")
 var line = document.querySelector("#hrLine")
 var h2 = document.querySelector("h2")
-var h2 = document.querySelector("h1")
+var h1 = document.querySelector("h1")
 var header = document.querySelectorAll("header")
+
+
 
 //Temas
 function darkTheme() {
@@ -29,6 +31,7 @@ function whiteTheme() {
     WhiteMode.style.display = "none"
     DarkMode.style.display = "block"
 
+    h1.style.color = "black"
     h2.style.color = "black"
     body.style.color = "black"
     body.style.background = "rgb(241, 237, 237)"
@@ -37,18 +40,21 @@ function whiteTheme() {
 
 //Abas
 function markAba() {
+    h1.innerHTML = "Guerra Medieval"
     aba1.style.display = "block"
     aba2.style.display = "none"
     aba3.style.display = "none"
 }
 
 function markAba2() {
+    h1.innerHTML = "Castelo - SR"
     aba1.style.display = "none"
     aba2.style.display = "block"
     aba3.style.display = "none"
 }
 
 function markAba3() {
+    h1.innerHTML = "Referências"
     aba1.style.display = "none"
     aba2.style.display = "none"
     aba3.style.display = "block"
