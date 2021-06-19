@@ -27,11 +27,12 @@ header{
 }
 
 header h1{
-    margin-top: 10px;
-    margin-left: 40px;
+    position: relative;
+    top: 25%;
+    text-align: center;
     font-family: 'Hammersmith One', sans-serif;
     color: rgb(0, 0, 0);
-    font-size: 70px;
+    font-size: 3rem;
 }
 
 /*DarkMode*/
@@ -103,8 +104,7 @@ header h1{
 }
 
 nav ul{
-    margin-left: 50%;
-    transform: translate(-50%);
+    justify-content: center;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -200,6 +200,20 @@ img{
 
 /*Conteudo principal*/
 
+.side-left{
+    box-shadow: 5px 5px 10px rgb(202, 197, 197);
+    border-radius: 10px;
+}
+
+.side-right{
+    box-shadow: 5px 5px 10px rgb(202, 197, 197);
+    border-radius: 10px;
+}
+
+.side-center{
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(202, 197, 197);
+}
 
 h2{
     margin-top: 10%;
@@ -228,7 +242,6 @@ h2{
 }
 
 .content-wrapper-1 p{
-    
     max-width: 90%;
     margin: 10px auto;
 }
@@ -260,6 +273,11 @@ main .content-wrapper-1 img{
     border-right: 1px solid black;
 }
 
+.content-wrapper-2 p{
+    max-width: 90%;
+    margin: 10px auto;
+}
+
 .content-wrapper-2 img{
     max-width: 100%;
 }
@@ -270,20 +288,7 @@ main .content-wrapper-1 img{
     margin-bottom: 30px;
 }
 
-.side-left{
-    background-color: rgb(219, 213, 213);
-    box-shadow: 1px 1px 10px rgb(202, 197, 197);
-}
 
-.side-right{
-    background-color: rgb(219, 213, 213);
-    box-shadow: 1px 1px 10px rgb(202, 197, 197);
-}
-
-.side-center{
-    background-color: rgb(219, 213, 213);
-    box-shadow: 1px 1px 10px rgb(202, 197, 197);
-}
 
 /*Topico 3*/
 
@@ -310,7 +315,7 @@ main .content-wrapper-1 img{
 
 .content-wrapper-3 p{
     max-width: 90%;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .content-wrapper-3 h2{
@@ -342,7 +347,7 @@ main .content-wrapper-1 img{
 
 .content-wrapper-4 p{
     max-width: 90%;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .content-wrapper-4 ul li{
@@ -378,6 +383,11 @@ main .content-wrapper-1 img{
     margin-bottom: 30px;
 }
 
+.content-wrapper-5 p{
+    max-width: 90%;
+    margin: 10px auto;
+}
+
 /*Topico 6*/
 
 .content-wrapper-6{
@@ -396,7 +406,7 @@ main .content-wrapper-1 img{
 
 .content-wrapper-6 p{
     max-width: 90%;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .content-wrapper-6 h2{
@@ -420,6 +430,11 @@ main .content-wrapper-1 img{
     margin-bottom: 30px;
 }
 
+.content-wrapper-7 p{
+    max-width: 90%;
+    margin: 10px auto;
+}
+
 .marcacaoRedSpan{
     color: red;
 }
@@ -427,16 +442,28 @@ main .content-wrapper-1 img{
 /*Topico 8*/
 
 .content-wrapper-8{
-    margin-top: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content-wrapper-8 div{
+    flex: 500px;
+    margin: 20px;
 }
 
 .content-wrapper-8 h2{
     font-size: 40px;
     text-align: center;
     margin-bottom: 30px;
+}
+
+.content-wrapper-8 p{
+    max-width: 90%;
+    margin: 10px auto;
 }
 
 /*Topico 9*/
@@ -457,7 +484,7 @@ main .content-wrapper-1 img{
 
 .content-wrapper-9 p{
     max-width: 90%;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 
@@ -488,9 +515,9 @@ main .content-wrapper-1 img{
     margin: 20px;
 }
 
-.content-wrapper- p{
+.content-wrapper-10 p{
     max-width: 90%;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .content-wrapper-10 h2{
@@ -526,6 +553,11 @@ main .content-wrapper-1 img{
     font-size: 40px;
     text-align: center;
     margin-bottom: 30px;
+}
+
+.content-wrapper-11 p{
+    max-width: 90%;
+    margin: 10px auto;
 }
 
 .content-wrapper-11 h3{
