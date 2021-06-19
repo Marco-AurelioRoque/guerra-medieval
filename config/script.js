@@ -40,7 +40,7 @@ function whiteTheme() {
 
 //Abas
 function markAba() {
-    h1.innerHTML = "Guerra Medieval"
+    h1.innerHTML = "Guerra da idade média"
     aba1.style.display = "block"
     aba2.style.display = "none"
     aba3.style.display = "none"
