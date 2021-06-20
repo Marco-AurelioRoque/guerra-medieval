@@ -4,11 +4,15 @@
     border: 0px;
 }
 
+body, html{
+    min-height: 100%;
+}
+
 body{
     box-sizing: border-box;
     font-size: 20px;
     background-color: rgb(41, 41, 41, 0.90);
-    overflow-x: hidden;
+    overflow-x:hidden;
     color: #ffffff;
     
 }
@@ -201,16 +205,19 @@ img{
 /*Conteudo principal*/
 
 .side-left{
+    border: 1px solid black;
     box-shadow: 5px 5px 10px rgb(202, 197, 197);
     border-radius: 10px;
 }
 
 .side-right{
+    border: 1px solid black;
     box-shadow: 5px 5px 10px rgb(202, 197, 197);
     border-radius: 10px;
 }
 
 .side-center{
+    border: 1px solid black;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgb(202, 197, 197);
 }
@@ -421,7 +428,7 @@ main .content-wrapper-1 img{
     margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 80%;
+    max-width: 90%;
 }
 
 .content-wrapper-7 h2{
@@ -536,7 +543,7 @@ main .content-wrapper-1 img{
     margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 80%;
+    max-width: 90%;
 }
 
 .content-wrapper-11 .side-center{
