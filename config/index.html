@@ -42,7 +42,24 @@
 
     <!--Menu nav-->
 
-    <section class="menuNav-wrapper">
+    <nav class="menuNav-defalt">
+        <ul>
+            <a href="#" onclick="contentPrincipal(); markAba()">
+                <li data-aos="fade-right">Conteudo Principal <div class="aba-open"></div>
+                </li>
+            </a>
+            <a href="#" onclick="castle(); markAba2()">
+                <li data-aos="fade-right">Castelo - SR <div class="aba-open2"></div>
+                </li>
+            </a>
+            <a href="#" onclick="refer(); markAba3()">
+                <li data-aos="fade-right">Referências <div class="aba-open3"></div>
+                </li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="menuNav-other-device">
         <nav>
             <ul>
                 <a href="#" onclick="contentPrincipal(); markAba()">
@@ -59,8 +76,27 @@
                 </a>
             </ul>
         </nav>
-    </section>
 
+        <div class="modes">
+            <section class="darkMode" onclick="darkThemeMenu()" data-aos="fade-left">
+                <p>
+                    DM
+                </p>
+            </section>
+    
+            <section class="whiteMode" onclick="whiteThemeMenu()">
+                <p>
+                    WM
+                </p>
+    
+            </section>
+        </div>
+        <div class="menu-content-device">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+    </div>
     <!--Referencias-->
 
     <section class="referencia-wrapper">
@@ -854,6 +890,7 @@
         });
     </script>
     <script src="script.js"></script>
+    <script src="menu.js"></script>
 </body>
 
 </html>
