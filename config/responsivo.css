@@ -37,7 +37,7 @@
         width: 70vw;
         height: 70vh;
         border-radius: 0px 0px 10px 10px;
-        background-color: rgb(96, 132, 141);
+        background-color: rgba(144, 192, 204, 0.925);
         border: 2px solid black;
         z-index: 10;
     }
