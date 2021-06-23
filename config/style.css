@@ -41,28 +41,13 @@ header h1{
 
 /*DarkMode*/
 
-
-
 .darkMode{
     width: 50px;
-    height: 50px;
-    background-color: black;
-    border-radius: 50%;
-    position: fixed;
-    right: 0;
+    position: absolute;
     top: 0;
+    right: 0;
+    margin-right: 2%;
     display: none;
-}
-
-.darkMode p{
-    color: white;
-    font-size: 1.625rem;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.darkMode p:hover{
-    color: red;
     cursor: pointer;
 }
 
@@ -70,30 +55,13 @@ header h1{
 
 .whiteMode{
     width: 50px;
-    height: 50px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    position: fixed;
+    margin-right: 2%;
+    position: absolute;
     right: 0;
     top: 0;
-}
-
-.whiteMode p{
-    color: rgb(0, 0, 0);
-    font-size: 1.625rem;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.whiteMode p:hover{
-    color: red;
     cursor: pointer;
 }
 
-.whiteMode p:hover{
-    color: red;
-    cursor: pointer;
-}
 
 /*Outro*/
 
